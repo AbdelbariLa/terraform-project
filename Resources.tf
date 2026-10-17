@@ -32,6 +32,7 @@ module "ec2-instance" {
   tags = {
     Name = "node"
   } 
+  count = 2
 }
 
 variable "key_name" {
