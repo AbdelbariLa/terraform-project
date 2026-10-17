@@ -9,7 +9,9 @@ terraform {
 }
 
 provider "aws" {
-  region  = "eu-central-1"
+  shared_config_files = ["/home/abdelbari/.aws/config"]
+  shared_credentials_files = ["/home/abdelbari/.aws/credentials"]
+  region  = "eu-central-1" 
   profile = "eks-user"
 }
 
